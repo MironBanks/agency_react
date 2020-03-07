@@ -6,8 +6,8 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-### TODO LIST
-## build the UI
+## TODO LIST
+### build the UI
  - [] build header component
  - [] build banner what is the top section
  - [] build cases on the bottom
