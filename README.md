@@ -9,7 +9,7 @@ In the project directory, you can run:
 ## TODO LIST
 ### build the UI
  - [X] build header component
- - [] build banner what is the top section
+ - [X] build banner what is the top section
  - [] build cases on the bottom
  - [] animations
  - [] media query
