@@ -10,6 +10,6 @@ In the project directory, you can run:
 ### build the UI
  - [X] build header component
  - [X] build banner what is the top section
- - [] build cases on the bottom
+ - [X] build cases on the bottom
  - [] animations
  - [] media query
