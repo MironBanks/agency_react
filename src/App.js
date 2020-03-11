@@ -11,6 +11,7 @@ import CaseStudies from './pages/caseStudies'
 import Approach from './pages/approach'
 import About from './pages/about'
 import Services from './pages/services'
+import Navigation from "./components/navigation";
 
 
 const routes = [
@@ -44,6 +45,7 @@ function App() {
           </Route>
         ))}
       </div>
+      <Navigation />
     </>
   );
 }
