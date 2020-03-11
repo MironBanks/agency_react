@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Route } from 'react-router-dom'
 import "./styles/App.scss";
 import Header from "./components/header"
@@ -26,10 +26,26 @@ const routes = [
 
 
 function App() {
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
   useEffect(() => {
 
     let vh = window.innerHeight * .01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+
+    const HandleResize = () => {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth
+      })
+    }
+    window.addEventListener('resize', HandleResize)
+
+
+
 
     gsap.to('body', 0, { css: { visibility: 'visible' } })
   })
